@@ -26,6 +26,8 @@ O jogo **não traz músicas**. Cada jogador adiciona as suas direto no menu:
 
 Os arquivos ficam **somente no navegador do jogador** (IndexedDB) e continuam lá nas próximas visitas. Eles **não são enviados ao servidor** nem aos outros jogadores, então não há distribuição de música e o repositório não precisa de nenhum MP3. Se o navegador não permitir salvar (ex.: navegação privada), as músicas valem só até fechar a página.
 
+**Capa do álbum:** o jogo lê a imagem de capa que já vem embutida no arquivo (tags ID3 de MP3, MP4/M4A e FLAC) e mostra no menu, no HUD e na lista de músicas. A leitura é feita no próprio navegador, sem bibliotecas e sem enviar nada. Arquivos sem capa embutida (ou em formatos como OGG e WAV) simplesmente não mostram imagem.
+
 A playlist de cada modo toca em sequência e repete. Ao iniciar a partida, o jogo troca para a playlist de gameplay; ao clicar em **MENU**, volta para a do menu. Há controles de ligar/desligar e volume no menu e no HUD. Arquivos que o navegador não consegue tocar são pulados.
 
 Navegadores bloqueiam áudio antes de uma interação do usuário; a reprodução é liberada no primeiro clique, toque ou tecla.

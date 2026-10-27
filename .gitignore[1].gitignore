@@ -1,0 +1,10 @@
+node_modules/
+.env
+.DS_Store
+
+# Músicas comerciais não devem ir para o repositório público.
+# Coloque seus próprios MP3 em public/audio/ (veja o README).
+public/audio/*.mp3
+public/audio/*.wav
+public/audio/*.ogg
+public/audio/*.m4a
